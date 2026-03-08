@@ -41,6 +41,9 @@
       source = ./hypr;
       recursive = true;
     };
+    ".config/foot/foot.ini" = {
+      source = ./foot/foot.ini;
+    };
   };
 
   # The home.packages option allows you to install Nix packages into your
