@@ -34,6 +34,7 @@
   programs = {
     starship.enable = true;
     hyprland.enable = true;
+    niri.enable = true;
     fish.enable = true;
   };
 
@@ -97,8 +98,14 @@
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
+    alacritty
+    fuzzel
+    swaybg
+    rofi
+
+    xwayland-satellite
+    amdgpu_top
     btop
-    vim
     neovim
     ripgrep
     fastfetch

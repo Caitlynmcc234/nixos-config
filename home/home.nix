@@ -44,11 +44,15 @@
     ".config/foot/foot.ini" = {
       source = ./foot/foot.ini;
     };
+    # ".config/quickshell/shell.qml" = {
+    #   source = ./quickshell/shell.qml;
+    # };
   };
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    swww
     gimp
   ];
 
